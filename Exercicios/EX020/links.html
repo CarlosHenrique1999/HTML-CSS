@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*# = id
+          . = class
+          : = pseudo-class
+          :: = pseudo-element
+          > = children*/
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            color: cadetblue;
+        }
+        .abc::before {
+            content: '⇒';
+            color: aqua;
+        }
+        .abc::after {
+            content: '⇐';
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            color: aqua;
+        }
+        .abc{
+            background-color: rgba(0, 0, 0, 0.089);
+
+        }
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li class="abc"><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório GitHub.</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">Canal do Youtube.  </a></li>
+        <li><a href="https://www.cursoemvideo.com/apoie/" target="_blank">Site do CursoemVideo.  </a></li>
+    </ul>
+    
+</body>
+</html>

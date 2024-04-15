@@ -1,0 +1,130 @@
+
+header {
+    background-image: linear-gradient(to right, green, rgb(2, 168, 2));
+    height: 230px;
+}
+header > h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0px;
+    position: relative; top: 40px
+}
+header > p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative; top: 70px
+}
+
+body {
+    background-color: #39D546;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-indent: 25px;
+    color: black;
+    text-align: justify;
+    padding: 10px;
+}
+
+nav > a {
+    position: relative; top: 85px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+.hover1:hover {
+    background-color: rgb(1, 182, 1);
+}
+.hover2:hover {
+    background-color: rgb(1, 182, 1);
+}
+.hover3:hover {
+    background-color: rgb(1, 182, 1);
+}
+.hover4:hover {
+    background-color: rgb(1, 182, 1);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    width: 1300px;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+}
+
+main > h1 {
+    background-color: white;
+    color: #39D546;
+    text-align: left;
+}
+
+main > p {
+    background-color: white;
+    text-indent: 25px;
+}
+
+span {
+    color: green;
+}
+
+h2 {
+    padding: 10px;
+    background-color: #39d54648;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #036d0b;
+    color: white;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+.lista {
+    background-color: #8BFFA8;
+    color: black;
+    width: 300px;
+    height: 170px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 333px;
+    text-decoration: none;
+}
+#especial {
+    background-color: #8BFFA8;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px black;
+}
+.espaco {
+    height: 50px;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.701);
+}
+.rodape {
+    color: white;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem frexivel"><!--A ordem tem que ser começar de baixo (imagem padrão) pra cima. Igual ao código acima-->
+
+        <h1>Reproduzindo Áudios em HTML5.</h1>
+        <P>Vamos aprender a reproduzir áudio em HTML5.</P>
+        <audio src="midia/01 Public Service Announcement 2000.mp3" controls autoplay></audio>
+        <!--Para os áudios ser compativeis com todos tipos de navegaddores você precisar ter eles em todos esses formatos: MP3 WAV OGG-->
+
+    </picture>
+
+    <h1>Reproduzindo Áudios em HTML5.(Parte 2)</h1>
+    <audio preload="metadata" controls loop>
+        <source src="midia/05. Normal.mp3" type="audio/mpeg">
+        <source src="midia/05. Normal.ogg" type="audio/ogg">
+        <source src="midia/05. Normal.wav" type="audio/wav">
+        <p>Se não estiver ouvindo áudio seu navegador não é compativel com áudio. <a href="midia/05. Normal.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+</body>
+</html>

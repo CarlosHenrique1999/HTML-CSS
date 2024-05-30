@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+        }
+        td, th {
+            border: 1px black solid;
+            padding: 5px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        td.numero {
+            text-align: right;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+            -->
+    <table>
+        <caption>Populacao das Unidadess Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">Populacao</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th>Sao Paulo</th>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <th>Minas Gerais</th>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <th>Hell de Janeiro</th>
+                    <td class="numero">17 264 943</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total de Habitantes</th>
+                        <td class="numero"><strong>84.352.783</strong></td>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

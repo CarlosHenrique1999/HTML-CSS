@@ -8,7 +8,22 @@
 <body>
     <h1>Exemplo de formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p></p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="ifut" checked><label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="ibas"><label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="esnata" id="inata"><label for="inata">Natacao</label> <br>
+            <input type="checkbox" name="estenis" id="itenis"><label for="itenis">Tenis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
     
 </body>

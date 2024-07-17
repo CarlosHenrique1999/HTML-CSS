@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
     <title>Projeto Menu Responsivo</title>
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="opcoes">
             <ul>
                 <li><a href="#">Opcao 1</a></li>
                 <li><a href="#">Opcao 2</a></li>
@@ -29,5 +34,22 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae obcaecati in neque eius nisi! Quo delectus, cupiditate in itaque, fugit explicabo molestiae veritatis, repellendus omnis doloribus tenetur hic eum quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero delectus autem sed cumque illo labore, provident hic corrupti libero voluptatem consequuntur quia vel aspernatur iusto, qui atque nulla quam eaque.</p>
         </article>
     </main>
+    <script>
+        function mudarTamanho() {
+            if (window.innerWidth >= 992) {
+                opcoes.style.display = 'block'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+                opcoes.style.display = 'none'
+            } else {
+                opcoes.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -15,6 +15,9 @@ Grandes telas: acima de 1200px de largurs
 
     * {
         font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        text-indent: 15px;
+        text-align: justify;
     }
 
     body {
